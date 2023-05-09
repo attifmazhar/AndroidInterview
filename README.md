@@ -9,7 +9,7 @@ Imperative programming, on the other hand, is a programming paradigm that involv
 programming paradigm is used to create UI components, where you describe the structure and appearance of the UI components using Composable functions, without specifying the implementation details.
 Here's an example of a Composable function that creates a simple text view:
 
-```json
+```
 @Composable
 fun MyTextView(text: String) {
     Text(text = text)
@@ -67,6 +67,8 @@ To create a custom component in Jetpack Compose, you can use the @Composable ann
 - Use the key parameter to provide a stable identity for the component
 - Avoid side effects and keep state in a view model or repository
 Here's an example of a custom component:
+
+```
 @Composable
 fun MyCustomComponent(
     text: String,
@@ -79,7 +81,7 @@ fun MyCustomComponent(
         modifier = Modifier.clickable(onClick = onClick)
     )
 }
-
+```
 
 #### 6. How do you handle testing and debugging in Jetpack Compose, and what tools do you use?
 Testing and debugging in Jetpack Compose can be handled using the Android Studio debugger and the androidx.compose.ui.test library. You can use the following tools:
