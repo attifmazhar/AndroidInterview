@@ -26,11 +26,13 @@ only when the cached value changes. Best practices for data binding in Jetpack C
 
 Here's an example of using the remember function to cache a value:
 
+```
 @Composable
 fun MyTextView(text: String) {
     val cachedText = remember(text) { text }
     Text(text = cachedText)
 }
+```
 
 #### 3. How does Jetpack Compose handle performance and efficiency, and what strategies do you use to optimize it?
 
