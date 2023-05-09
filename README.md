@@ -9,11 +9,12 @@ Imperative programming, on the other hand, is a programming paradigm that involv
 programming paradigm is used to create UI components, where you describe the structure and appearance of the UI components using Composable functions, without specifying the implementation details.
 Here's an example of a Composable function that creates a simple text view:
 
+```json
 @Composable
 fun MyTextView(text: String) {
     Text(text = text)
 }
-
+```
 
 #### 2. How do you handle data binding in Jetpack Compose, and what are some best practices?
 
